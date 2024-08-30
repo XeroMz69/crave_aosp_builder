@@ -322,7 +322,7 @@ jobs:
         echo "PROJECTFOLDER=$PROJECTFOLDER" >> "$GITHUB_ENV"
         echo "PROJECTID=$PROJECTID"  >> "$GITHUB_ENV"
         echo "REPO_INIT=$REPO_INIT" >> "$GITHUB_ENV"
-        echo "LUNCH=$LUNCH" >> "$GITHUB_ENV"
+        echo "LUNCH=lunch derp_earth-user" >> "$GITHUB_ENV"
         echo "LOCAL_MANIFEST=$LOCAL_MANIFEST" >> "$GITHUB_ENV"
 
       # Send Build 'start' notification
