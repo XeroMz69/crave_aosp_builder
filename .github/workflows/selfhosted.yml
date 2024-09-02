@@ -322,7 +322,7 @@ jobs:
         echo "PROJECTFOLDER=$PROJECTFOLDER" >> "$GITHUB_ENV"
         echo "PROJECTID=$PROJECTID"  >> "$GITHUB_ENV"
         echo "REPO_INIT=$REPO_INIT" >> "$GITHUB_ENV"
-        echo "LUNCH=lunch aosp_earth-userdebug" >> "$GITHUB_ENV"
+        echo "LUNCH=lunch derp_earth-user" >> "$GITHUB_ENV"
         echo "LOCAL_MANIFEST=$LOCAL_MANIFEST" >> "$GITHUB_ENV"
 
       # Send Build 'start' notification
@@ -470,7 +470,7 @@ jobs:
         echo "Run ID: ${{ github.run_id }}"; \
 
         # Build the ROM
-        lunch aosp_earth-userdebug && \
+        lunch derp_earth-user && \
         make installclean && \
         ${{ github.event.inputs.BUILD_COMMAND }}"
       timeout-minutes: 1440
